@@ -1,7 +1,7 @@
-# wrapped_cordic
-Wrapped calls to functions from Voidware's CORDIC methods here: http://www.voidware.com/cordic.htm
+# CORDIC functions
+Wrapped calls to functions from Voidware's CORDIC implementation here: http://www.voidware.com/cordic.htm . This project handles the domain issues stated in the comments. 
 
-The effect is a reasonably precise implementation of special functions whose compile size is much smaller than their equivalents in `<math.h>`, albeit a bit slower.
+The effect is some reasonably precise special functions with compile size much smaller than their equivalents in `<math.h>`, albeit a bit slower.
 
 To use in your project, bring the following files in:
 ```
@@ -21,5 +21,5 @@ To regenerate constants, see `cordic_consts.c`.
 
 
 ## Todo:
-- Fix `atan_wc`'s imprecision
+- Fix `atan_wc`'s imprecision for extreme values
 - Add more thorough tests in `test_math.c`
