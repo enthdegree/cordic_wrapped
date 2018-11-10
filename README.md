@@ -5,5 +5,6 @@ To test, run:
 
 <code>
    $ cc -lm ./cordic.c ./cordic_wrapped.c ./test_math.c
+   
    $ ./a.out
 </code>
