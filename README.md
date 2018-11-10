@@ -5,7 +5,7 @@ The effect is some reasonably precise special functions with compile size much s
 
 To use in your project, bring the following files in:
 ```
-cordic.c, cordic_consts.c, cordic_wrapped.c, cordic_wrapped.h
+cordic.c, cordic.h, cordic_consts.c, cordic_wrapped.c, cordic_wrapped.h
 ```
 Add `cordic.c` and `cordic_wrapped.c` to your makefiles, and to include use `#include cordic_wrapped.h`.
 
