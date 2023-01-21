@@ -1,16 +1,17 @@
-/* Constants needed by CORDIC algorithm. 
+d/* Constants needed by CORDIC algorithm. 
  *
  * To regenerate the constants, 
- * 	delete everything after #ifdef 
+ * 	delete everything after #endif 
  * 	run `cc cordic_consts.c -lm -DREGEN`  
  * 	run `a.out >> cordic_consts.c` 
  *
  */
 
-/* working with IEEE doubles, means there are 53 bits
- * of mantissa
+/*
+ * Double = 53 bits mantissa
+ * Single = 23 bits
  */
-#define MAXBITS	53
+#define MAXBITS	53 // Double = 53 bits mantissa, single = 23 bits
 
 #ifdef REGEN
 #include <stdio.h>

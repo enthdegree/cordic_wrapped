@@ -219,5 +219,5 @@ double acosh_wc(double a) {
 	return res;
 }
 double atanh_wc(double a) { 
-	return asinh_wc(a/sqrt(1-a*a));
+	return asinh_wc(a/sqrt_wc(1-a*a));
 }
